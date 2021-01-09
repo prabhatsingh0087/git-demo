@@ -6,3 +6,5 @@ sudo apt install openjdk-8-jdk -y
 sudo apt-get -y install jenkins
 sudo service jenkins start
 sudo service jenkins status
+
+3c33f40b48204cdcb63e225c62f1aacf
