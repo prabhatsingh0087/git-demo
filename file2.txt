@@ -1,1 +1,8 @@
-My Second file
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+echo "  deb https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list
+sudo apt-get upgrade
+sudo apt-get update
+sudo apt install openjdk-8-jdk -y
+sudo apt-get -y install jenkins
+sudo service jenkins start
+sudo service jenkins status
